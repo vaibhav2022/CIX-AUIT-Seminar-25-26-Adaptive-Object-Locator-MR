@@ -39,49 +39,6 @@ public class PlacementManager : MonoBehaviour
         }
     }
 
-    // public void PlaceMarkerInFront()
-    // {
-    //     if (head == null || markerPrefab == null || targetContextSource == null || anchorManager == null) return;
-
-    //     if (anchorManager.anchors.Count >= 4)
-    //     {
-    //         Debug.Log("Anchor limit reached. Cannot add more than 4 anchors.");
-
-    //         if (anchorMenuUI != null)
-    //         {
-    //             anchorMenuUI.ShowTemporaryMessage("Max 4 anchors", 1f);
-    //         }
-
-    //         return;
-    //     }
-
-    //     Vector3 spawnPosition = head.position + head.forward * placementDistance;
-    //     spawnPosition.y = head.position.y - 0.1f;
-
-    //     GameObject newMarker = Instantiate(markerPrefab, spawnPosition, Quaternion.identity);
-
-    //     string label = "Unlabeled";
-    //     anchorManager.AddAnchor(label, newMarker);
-    //     anchorManager.selectedIndex = anchorManager.anchors.Count - 1;
-
-    //     AnchorData selected = anchorManager.GetSelectedAnchor();
-    //     currentTarget = selected != null ? selected.anchorTransform : null;
-
-    //     targetContextSource.SetTarget(currentTarget != null ? currentTarget : head);
-
-    //     if (anchorLabelMenu != null)
-    //     {
-    //         anchorLabelMenu.OpenMenu();
-    //     }
-
-    //     if (screenToggle != null)
-    //     {
-    //         screenToggle.ShowLabelMode();
-    //     }
-
-    //     Debug.Log("New anchor placed.");
-    // }
-
     public void PlaceMarkerInFront()
     {
         if (head == null || markerPrefab == null || targetContextSource == null || anchorManager == null) return;
@@ -159,17 +116,6 @@ public class PlacementManager : MonoBehaviour
     {
         return currentTarget;
     }
-
-    // public void RefreshCurrentTargetFromSelection()
-    // {
-    //     if (anchorManager == null || targetContextSource == null || head == null) return;
-
-    //     AnchorData selected = anchorManager.GetSelectedAnchor();
-    //     currentTarget = selected != null ? selected.anchorTransform : null;
-
-    //     targetContextSource.SetTarget(currentTarget != null ? currentTarget : head);
-            
-    // }
 
     public void RefreshCurrentTargetFromSelection()
     {
