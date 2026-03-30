@@ -31,28 +31,3 @@ public class RuntimeTransformContextSource : TransformContextSource
         runtimeTarget = null;
     }
 }
-
-// using AUIT.ContextSources;
-// using UnityEngine;
-
-// public class RuntimeTransformContextSource : TransformContextSource
-// {
-//     [SerializeField]
-//     private Transform runtimeTarget;
-
-//     public void SetTarget(Transform newTarget)
-//     {
-//         runtimeTarget = newTarget;
-//         Debug.Log("RuntimeTransformContextSource set to: " + (runtimeTarget != null ? runtimeTarget.name : "NULL"));
-//     }
-
-//     public override Transform GetValue() 
-//     {
-//         return runtimeTarget;
-//     }
-
-//     public bool HasTarget()
-//     {
-//         return runtimeTarget != null;
-//     }
-// }
