@@ -46,3 +46,8 @@ $RECYCLE.BIN/
 # Misc
 sysinfo.txt
 crashlytics-build.properties
+
+.utmp/
+PlayableBuilds/
+TempAssembly.dll
+*.slnx
