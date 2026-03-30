@@ -8,6 +8,18 @@ This project was developed for a seminar & demo on Adaptive UI in Mixed Reality 
 
 ---
 
+## Main Demo Scene
+`Assets/Scenes/AUIT_9_Final_Working.unity`
+
+---
+
+## Tested On
+- Windows development machine
+- Meta Quest 3
+- Unity 6000.3.9f1
+
+---
+
 ## Features
 - Passthrough-based MR interaction on Meta Quest 3
 - Manual anchor creation and deletion
